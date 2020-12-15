@@ -1,0 +1,9 @@
+_site
+.sass-cache
+.jekyll-metadata
+
+# MacOS
+.DS_Store
+
+# asdf version manager
+.tool-versions

@@ -1,0 +1,28 @@
+title: Drupal Timeline JSON API
+email: your-email@example.com # note: we can cut this from the theme, it's just the default "minima" one
+description: >- # this means to ignore newlines until "baseurl:"
+  A plain text JSON "API" of notable Drupal times
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+excerpt_separator: "<!--more-->"
+permalink: /:year/:month/:day/:title/
+timezone: UTC
+
+# Build settings
+markdown: kramdown
+theme: minima # can customize this, leaving as is for experiment
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

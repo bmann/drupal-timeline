@@ -1,0 +1,18 @@
+---
+layout: post
+---
+{% if page.priority %}
+  <p id="priority" style="text-decoration: underline">Priority {{ page.priority }}</p>
+{% endif %}
+
+
+{{ content }}
+
+{% if page.link %}
+    <span><a href="{{ page.link }}">Citation »»»</a></span>
+{% endif %}
+
+{% comment %}
+  - Just showing some examples of pulling in front matter content
+  - might link to a JSON representation of just this one item here
+{% endcomment %}
