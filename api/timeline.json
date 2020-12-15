@@ -12,7 +12,7 @@ permalink: /api/timeline.json
       {% if post.excerpt %}
       "description": "{{ post.excerpt | strip_html }}",
       {% else %}
-      "description": "{{ post.body | strip_html | truncate: 253 }}",
+      "description": "{{ post.body | strip_html | normalize_whitespace | truncatewords: 75 | escape }}",
       {% endif %}
       "comment": "{{ post.comment }}"
     }{% unless forloop.last %},{% endunless %}
